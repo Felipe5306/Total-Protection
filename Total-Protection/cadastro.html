@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Total Protection</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-icon">
+            <i class="fas fa-video fa-3x"></i>
+        </div>
+        <h2>Cadastro Total Protection</h2>
+        <form id="cadastro-form">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="cadastro-name" name="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="cadastro-password" name="password" placeholder="Sua senha" required>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fas fa-sign-in-alt"></i>
+                Cadastrar
+            </button>
+        </form>
+        <p>Já possui conta? <a href="login.html"><i class="fas fa-sign-in-alt"></i> Entre</a></p>
+        
+        <div class="security-icons">
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-video"></i>
+        </div>
+    </div>
+    <script src="./scripts/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2c2c2c, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #eee;
+}
+
+.container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    border: 1px solid #444;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 35px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #444;
+    color: #fff;
+    outline: none;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.header-icon {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.security-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.security-icons i {
+    transition: transform 0.3s ease;
+}
+
+.security-icons i:hover {
+    transform: scale(1.2);
+    color: #aaa;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Animação para os ícones de segurança */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.security-icons i {
+    animation: pulse 2s infinite;
+}
